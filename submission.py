@@ -35,7 +35,8 @@ emails = [
     "demo@aurorianrecords.com",
     "demo@houseofphonk.com",
     "etherealdreamsrecords@gmail.com",
-    "contact.bassdarkness@gmail.com"
+    "contact.bassdarkness@gmail.com",
+    "hcg@medialord.com.tr"
 ]
 
 labels = [
@@ -46,7 +47,8 @@ labels = [
     "Aurorian Records",
     "House of Phonk",
     "Ethereal Dreams",
-    "Bass Darkness"
+    "Bass Darkness",
+    "Heated Creative Group"
 ]
 
 vars = []
