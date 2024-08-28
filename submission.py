@@ -45,7 +45,7 @@ labels = [
     "Polaris",
     "Aurorian Records",
     "House of Phonk",
-    "Etheral Dreams",
+    "Ethereal Dreams",
     "Bass Darkness"
 ]
 
