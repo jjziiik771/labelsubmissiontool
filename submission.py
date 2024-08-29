@@ -23,7 +23,7 @@ def update_email_list():
     for email, var in zip(emails, vars):
         if var.get() == 1:
             selected_emails.append(email)
-    print("Selected Emails:", selected_emails)
+    print("Selected E-Mails:", selected_emails)
 
 
 
@@ -76,7 +76,7 @@ songname_entry = tk.Entry(root, width=20)
 songname_entry.place(x=30, y=200)
 
 
-artists_label = tk.Label(root, text="Artist/s (Separate multiple with comma): ")
+artists_label = tk.Label(root, text="Artist/s (Separate multiple with a comma): ")
 artists_label.place(x=228, y=180)
 
 # Entry widget for the subject
@@ -120,17 +120,17 @@ def submit():
 
     if not email_entry.get().endswith("@gmail.com"):
         errorlevel += 1
-        messagebox.showwarning("Error", "Use a gmail address (@gmail.com)!")
+        messagebox.showwarning("Error", "Use a Gmail address (@gmail.com)!")
 
     if errorlevel < 1: 
         try:   
             server = smtplib.SMTP("smtp.gmail.com", 587)
-            text = f"Subject: {"Demo Sumbission: " + " " + songname_entry.get()+" " + " - " + " " + artists_entry.get()}\n\n{final_message}"
+            text = f"Subject: {"Demo Submission: " + " " + songname_entry.get()+" " + " - " + " " + artists_entry.get()}\n\n{final_message}"
             server.starttls()
             server.login(email_entry.get(), auth_code_entry.get())
             for mail in selected_emails:
                 server.sendmail(email_entry.get(), mail, text)
-            messagebox.showinfo("Success", "Email(s) send look into your inbox!\n\n\n")
+            messagebox.showinfo("Success", "Email(s) sent, look into your inbox!\n\n\n")
         except Exception as e:
             log_file_path = "log.txt"
             try:   
