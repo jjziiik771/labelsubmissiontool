@@ -123,7 +123,11 @@ def submit():
         messagebox.showwarning("Error", "Use a Gmail address (@gmail.com)!")
 
     if errorlevel < 1: 
-        try:   
+        try:
+            confirm = messagebox.askyesno("Confirm Submission", "Are you sure you want to submit?")
+
+            if not confirm:
+                return
             server = smtplib.SMTP("smtp.gmail.com", 587)
             text = f"Subject: {"Demo Submission: " + " " + songname_entry.get()+" " + " - " + " " + artists_entry.get()}\n\n{final_message}"
             server.starttls()
