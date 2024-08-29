@@ -10,7 +10,7 @@ I (TakumoZero) am not responsible for any damages that this tool might cause whe
 
 2. Check the labels you want to submit your song to
 
-3. Fill out the Name Field and the Artist(s) field (seperate with a "," if there are more than 1 Artist)
+3. Fill out the Name Field and the Artist(s) field (separate with a "," if there are more than 1 Artist)
 
 4. Type in the Message that will be send in the Body part of the E-mail (dont forget to put a google drive / dropbox link of your song since there is no option to attach files {yet})
 
