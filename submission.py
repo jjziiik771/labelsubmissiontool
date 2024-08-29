@@ -3,7 +3,7 @@ import tkinter as tk
 from tkinter import messagebox
 
 root = tk.Tk()
-root.title("Label Submission Automator")
+root.title("Label Submission Tool")
 root.geometry("500x500")
 root.configure(bg='#242424')
 root.option_add('*Background', '#242424')
@@ -76,7 +76,7 @@ songname_entry = tk.Entry(root, width=20)
 songname_entry.place(x=30, y=200)
 
 
-artists_label = tk.Label(root, text="Artist/s (Seperate multilple with comma): ")
+artists_label = tk.Label(root, text="Artist/s (Separate multiple with comma): ")
 artists_label.place(x=228, y=180)
 
 # Entry widget for the subject
@@ -100,7 +100,7 @@ def submit():
     errorlevel = 0
     if len(selected_emails) == 0:
         errorlevel += 1
-        messagebox.showwarning("Error", "No E-Mail Selected!")
+        messagebox.showwarning("Error", "No E-Mail selected!")
 
     if songname_entry.get() == "":
         errorlevel += 1
@@ -116,11 +116,11 @@ def submit():
 
     if email_entry.get() == "":
         errorlevel += 1
-        messagebox.showwarning("Error", "No E-Mail adress entered!")
+        messagebox.showwarning("Error", "No E-Mail address entered!")
 
     if not email_entry.get().endswith("@gmail.com"):
         errorlevel += 1
-        messagebox.showwarning("Error", "Use a gmail adress (@gmail.com)!")
+        messagebox.showwarning("Error", "Use a gmail address (@gmail.com)!")
 
     if errorlevel < 1: 
         try:   
@@ -134,7 +134,7 @@ def submit():
         except Exception as e:
             log_file_path = "log.txt"
             try:   
-                messagebox.showwarning("Error", "An Error occured check the log file!")
+                messagebox.showwarning("Error", "An error occurred - check the log file!")
                 with open(log_file_path, "w") as log_file:
                     log_file.write(f"{e}")
                     # Ensure the message is flushed to the file
