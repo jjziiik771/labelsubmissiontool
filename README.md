@@ -22,7 +22,7 @@ I (TakumoZero) am not responsible for any damages that this tool might cause whe
      - write the key you see in a blue box down since you are not able to see it ever again
      - put this exact code into the Google App Code Box inside the tool
 
-7. Press Submit and everything should work (if not, the error will be shown or available in the log.txt file in the same directory as the submission tool
+7. Press Submit and everything should work (if not, the error will be shown or available in the log.txt file in the same directory as the submission tool)
 
 
 If you have any questions or bugs, you can contact me on my social here: https://linktr.ee/TakumoZero
