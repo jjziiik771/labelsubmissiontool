@@ -12,7 +12,7 @@ root.option_add('*Font', 'Helvetica 10')
 
 
 def on_closing():
-    messagebox.showinfo("INFO", "Tool Created By TakumoZero [TK0] \n Spotify: TakumoZero")
+    messagebox.showinfo("INFO", "Tool Created By TakumoZero [TK0] & Luvoos\nTakumo's Spotify: TakumoZero")
     root.destroy()
 
 
@@ -36,7 +36,8 @@ emails = [
     "demo@houseofphonk.com",
     "etherealdreamsrecords@gmail.com",
     "contact.bassdarkness@gmail.com",
-    "hcg@medialord.com.tr"
+    "hcg@medialord.com.tr",
+    "mnrcrecords@gmail.com"
 ]
 
 labels = [
@@ -48,7 +49,8 @@ labels = [
     "House of Phonk",
     "Ethereal Dreams",
     "Bass Darkness",
-    "Heated Creative Group"
+    "Heated Creative Group",
+    "MNRC Records"
 ]
 
 vars = []
