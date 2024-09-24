@@ -28,7 +28,7 @@ def update_email_list():
 
 
 emails = [
-    "vinicius@vyrusrecords.com",
+    "demos@vyrusrecords.com",
     "submissions@tribaltrap.com",
     "Demo@MagicMusic.io",
     "demo@polarisrecords.net",
