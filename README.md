@@ -30,11 +30,3 @@ uvicorn main:app --reload
 ```
 !!! Frontend built with React+Tailwind compiled into static/dist files
 ##### app/static/index
-     - give the Password a name and click "create"
-     - write down the key you see in a blue box since you are not able to see it ever again
-     - put this exact code into the Google App Code Box inside the tool
-
-7. Press Submit and everything should work (if not, the error will be shown or available in the log.txt file in the same directory as the submission tool)
-
-
-If you have any questions or encounter any bugs, you can contact me on my social here: https://linktr.ee/TakumoZero
