@@ -1,23 +1,35 @@
-# Disclaimer
+# LABEL SUBMISSION WEB TOOL
+### Use with responsability
 
-I (TakumoZero) am not responsible for any damage that this tool might cause when not used properly
+1. clone this repo
+2. Create virtual env 
+```
+python -m venv venv
 
-# How to use:
+```
 
-0. Install Python on your system if not already installed on the official Python website (https://www.python.org/downloads/)
+3. activate (depending of your OS)
+###### Windows
+```
+.\env\Scripts\activate 
 
-1. Download the submission.py file and execute it
+```
+###### MacOs/Linux
+```
+source venv/bin/activate
 
-2. Check the labels you want to submit your song to
+```
+4. Install dependencies
+```
+pip install -r requirements.txt
 
-3. Fill out the Name Field and the Artist(s) field (separate with a "," if there are more than 1 Artist)
-
-4. Type in the Message that will be sent in the Body part of the E-mail (dont forget to put a google drive / dropbox link of your song since there is no option to attach files {yet})
-
-5. Type in your E-Mail address that is going to be used to send the submissions (only @gmail.com addresses will work)
-
-6. Put in the Google App Password of the E-Mail you typed in
-     - go to https://myaccount.google.com/apppasswords
+```
+5. Run Server 
+```
+uvicorn main:app --reload
+```
+!!! Frontend built with React+Tailwind compiled into static/dist files
+##### app/static/index
      - give the Password a name and click "create"
      - write down the key you see in a blue box since you are not able to see it ever again
      - put this exact code into the Google App Code Box inside the tool
