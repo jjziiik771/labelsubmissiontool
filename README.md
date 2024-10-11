@@ -29,4 +29,5 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 !!! Frontend built with React+Tailwind compiled into static/dist files
+check front repo: https://github.com/jjziiik771/labelsubmissiontoolfr
 ##### app/static/index
